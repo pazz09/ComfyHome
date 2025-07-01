@@ -22,6 +22,32 @@ body::before {
   z-index: -1;
 }
 
+#loader {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.spinner {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #0b3d91;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+
 /* Encabezado */
 header {
   background-color: #0f2e45; /* azul petróleo */
@@ -104,6 +130,27 @@ h3 {
   margin-bottom: 1rem;
 }
 
+.problema-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.problema-column img {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.problema-column img:hover {
+  transform: scale(1.02);
+}
+
+
 /* Testimonios */
 .testimonial {
   background-color: #ffffff;
@@ -147,15 +194,15 @@ footer {
 }
 
 .problema-image {
-    width: 170%;
     max-width: 600px;
+    width: 100%;
     height: auto;
-    margin: 20px 0;
+    margin: 20px auto;
     border-radius: 8px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 
 /* Contenedor para el logo e ícono */
 .logo-container {
@@ -176,4 +223,48 @@ footer {
   margin: 0;
   font-size: 1.8rem;
   color: #ffffff;
+}
+
+
+.solucion-section {
+  background-color: #e8f0f2;
+  border-radius: 12px;
+  padding: 4rem 2rem;
+}
+
+.solucion-text p {
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.frase-final {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #d1e7ed;
+  border-left: 4px solid #0f2e45;
+  font-style: italic;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  color: #0f2e45;
+}
+
+.solucion-images {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.solucion-image {
+  max-width: 600px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.solucion-image:hover {
+  transform: scale(1.02);
 }
