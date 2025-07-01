@@ -6,6 +6,9 @@
   <title>ComfyHome | Alojamiento universitario seguro</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <!-- AOS: Animaciones al hacer scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
     <header>
@@ -23,7 +26,7 @@
     </nav>
   </header>
 
-  <section class="hero">
+  <section class="hero" data-aos="fade-in">
     <div class="hero-content">
       <h2>Tu hogar universitario seguro y cercano</h2>
       <p>Encuentra alojamientos verificados cerca de tu universidad en Valparaíso. Sin estafas, sin estrés.</p>
@@ -31,23 +34,23 @@
     </div>
   </section>
 
-  <section id="problema">
+  <section id="problema" data-aos="fade-up">
     <h3>Un problema que afecta a miles</h3>
     <p>En Chile, más de 169.000 estudiantes deben dejar sus hogares para estudiar en otra ciudad. Solo en la Región de Valparaíso, son más de 24.000. Muchos llegan solos, sin redes de apoyo, sin saber en quién confiar y con presupuestos limitados. Terminan buscando alojamiento en plataformas como Yapo, WhatsApp o Facebook Marketplace, donde son estafados o viven en malas condiciones pagando precios elevados.</p>
   </section>
 
-  <section id="solucion" class="alt">
+  <section id="solucion" class="alt" data-aos="fade-up">
     <h3>Nuestra solución</h3>
     <p>ComfyHome es una plataforma web hecha con empatía que conecta a estudiantes foráneos con alojamientos verificados, seguros y cercanos a sus universidades. Todo en un solo lugar, con precios claros y contratos formales.</p>
     <p>Queremos comenzar trabajando con la PUCV y generar alianzas con residencias ya registradas. Lanzaremos un plan piloto a finales de este año.</p>
   </section>
 
-  <section id="modelo">
+  <section id="modelo" data-aos="fade-up"> 
     <h3>Modelo de negocio</h3>
     <p>Nuestros ingresos provienen de comisiones bajas por cada reserva, nunca superiores al 10%, lo que asegura un acceso justo y accesible para estudiantes.</p>
   </section>
 
-  <section id="equipo">
+  <section id="equipo" data-aos="fade-up">
     <h3>Nuestro equipo</h3>
     <ul>
       <li><strong>Antonia Navarrete</strong> – Jefa de proyecto</li>
@@ -59,7 +62,7 @@
     </ul>
   </section>
 
-  <section id="testimonios">
+  <section id="testimonios" data-aos="fade-up">
     <h3>Lo que dicen nuestros usuarios</h3>
     <div class="testimonial">
       <p>“Gracias a ComfyHome encontré una residencia segura a solo 10 minutos de mi universidad. Me sentí acompañada desde el primer día.”</p>
@@ -71,7 +74,7 @@
     </div>
   </section>
 
-  <section id="contacto" class="alt">
+  <section id="contacto" class="alt" data-aos="fade-up">
     <h3>¡Súbete a ComfyHome!</h3>
     <p>Actualmente estamos buscando aliados interesados. Escríbenos a <a href="mailto:comfyhome@mail.cl">comfyhome@mail.cl</a> o síguenos en <strong>@comfyhome_cl</strong>.</p>
     <form class="contact-form">
@@ -86,5 +89,17 @@
     <p>&copy; 2025 ComfyHome | Desarrollado por estudiantes para estudiantes.</p>
     <p>"Para que estudiar lejos, nunca más signifique estar solos."</p>
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        duration: 800,  // duración en ms
+        once: true,     // solo una vez
+        easing: 'ease-in-out'
+    });
+  </script>
+ 
+
+
 </body>
 </html>
